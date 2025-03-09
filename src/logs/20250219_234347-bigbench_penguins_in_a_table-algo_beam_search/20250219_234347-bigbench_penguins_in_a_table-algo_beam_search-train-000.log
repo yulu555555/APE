@@ -1,0 +1,13 @@
+20250219_234347-bigbench_penguins_in_a_table-algo_beam_search
+task_name : bigbench
+search_algo : beam_search
+print_log : True
+log_dir : ./logs/20250219_234347-bigbench_penguins_in_a_table-algo_beam_search
+init_prompt : Answer questions about a table of penguins and their attributes.
+
+task_setting : {'train_size': 70, 'eval_size': 50, 'test_size': 79, 'seed': 42, 'data_dir': 'E:/2025/promptagent/PromptAgent/datasets/penguins_in_a_table.json', 'post_instruction': False}
+base_model_setting : {'model_type': 'openai', 'model_name': 'gpt-4o-mini', 'temperature': 0.0, 'api_key': 'sk-iQgw71x5JsUTG93Ya4LlGBL7HLY3GJuTX8negxcmfDi2LLAW', 'device': 'cuda:0', 'gpu_ids': [0], 'model_path': None}
+optim_model_setting : {'model_type': 'openai', 'model_name': 'gpt-4o-mini', 'temperature': 1.0, 'api_key': 'sk-iQgw71x5JsUTG93Ya4LlGBL7HLY3GJuTX8negxcmfDi2LLAW', 'device': 'cuda:0', 'gpu_ids': 0, 'model_path': None}
+search_setting : {'iteration_num': 10, 'expand_width': 3, 'depth_limit': 5, 'min_depth': 2, 'w_exp': 2.5, 'beam_width': 3}
+world_model_setting : {'train_shuffle': True, 'num_new_prompts': 3, 'train_batch_size': 5}
+task : <tasks.bigbench.CustomTask object at 0x000001B9F7019340>

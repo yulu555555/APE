@@ -1,0 +1,140 @@
+task_name: object_counting
+eval_prompt: Questions that involve enumerating objects of different types and asking the model to count them
+
+testset size: 79, shuffle: False, post_instruction: False
+prompt example: 
+Questions that involve enumerating objects of different types and asking the model to count them
+example_question
+
+
+-------- example 0 --------
+Input:
+Questions that involve enumerating objects of different types and asking the model to count them
+I have a drum, a lettuce head, a piano, an accordion, a cauliflower, a garlic, and a trombone. How many musical instruments do I have?
+
+
+Response:
+You have three musical instruments: a piano, an accordion, and a trombone.
+
+Pred: 3  Label: 4  Correct: False
+Test Metric: 0.0000
+-------------------------------
+-------- example 1 --------
+Input:
+Questions that involve enumerating objects of different types and asking the model to count them
+I have a goat, a snail, a cow, a fish, two chickens, a snake, a rabbit, a mouse, and a donkey. How many animals do I have?
+
+
+Response:
+To count the animals you have, let's list them:
+
+1. Goat
+2. Snail
+3. Cow
+4. Fish
+5. Chicken (2)
+6. Snake
+7. Rabbit
+8. Mouse
+9. Donkey
+
+Now, let's count them:
+
+- Goat: 1
+- Snail: 1
+- Cow: 1
+- Fish: 1
+- Chickens: 2
+- Snake: 1
+- Rabbit: 1
+- Mouse: 1
+- Donkey: 1
+
+Now, adding them up: 
+
+1 + 1 + 1 + 1 + 2 + 1 + 1 + 1 + 1 = 11
+
+You have a total of 11 animals.
+
+Pred: 11  Label: 10  Correct: False
+Test Metric: 0.0000
+-------------------------------
+-------- example 2 --------
+Input:
+Questions that involve enumerating objects of different types and asking the model to count them
+I have two mice, a rabbit, two donkeys, a bear, a dog, a snake, a chicken, and a cat. How many animals do I have?
+
+
+Response:
+To count the animals you have, let's list them:
+
+- Mice: 2
+- Rabbit: 1
+- Donkeys: 2
+- Bear: 1
+- Dog: 1
+- Snake: 1
+- Chicken: 1
+- Cat: 1
+
+Now, let's add them up:
+
+2 (mice) + 1 (rabbit) + 2 (donkeys) + 1 (bear) + 1 (dog) + 1 (snake) + 1 (chicken) + 1 (cat) = 10 animals in total.
+
+So, you have 10 animals.
+
+Pred: 10  Label: 10  Correct: True
+Test Metric: 0.3333
+-------------------------------
+-------- example 3 --------
+Input:
+Questions that involve enumerating objects of different types and asking the model to count them
+I have a raspberry, a blackberry, three nectarines, a banana, two clarinets, a peach, a plum, a strawberry, a violin, a grape, a trumpet, and an orange. How many fruits do I have?
+
+
+Response:
+To count the fruits, let's list them:
+
+- Raspberry
+- Blackberry
+- Nectarines (3)
+- Banana
+- Peach
+- Plum
+- Strawberry
+- Grape
+- Orange
+
+Now, let's count them:
+
+1. Raspberry
+2. Blackberry
+3. Nectarine (1)
+4. Nectarine (2)
+5. Nectarine (3)
+6. Banana
+7. Peach
+8. Plum
+9. Strawberry
+10. Grape
+11. Orange
+
+Total fruits = 11. 
+
+You have 11 fruits.
+
+Pred: 11  Label: 11  Correct: True
+Test Metric: 0.5000
+-------------------------------
+-------- example 4 --------
+Input:
+Questions that involve enumerating objects of different types and asking the model to count them
+I have an accordion, a yam, two clarinets, a garlic, a cauliflower, a cabbage, and a flute. How many vegetables do I have?
+
+
+Response:
+You have three vegetables: a yam, a garlic, and a cauliflower.
+
+Pred: 3  Label: 4  Correct: False
+Test Metric: 0.4000
+-------------------------------

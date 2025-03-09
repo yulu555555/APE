@@ -1,0 +1,13 @@
+20250220_164630-object_counting-algo_beam_search
+task_name : object_counting
+search_algo : beam_search
+print_log : True
+log_dir : ./logs/20250220_164630-object_counting-algo_beam_search
+init_prompt : Questions that involve enumerating objects of different types and asking the model to count them
+
+task_setting : {'train_size': 700, 'eval_size': 150, 'test_size': 150, 'seed': 42, 'data_dir': 'E:/2025/promptagent/PromptAgent/datasets/object_counting.json', 'post_instruction': False}
+base_model_setting : {'model_type': 'openai', 'model_name': 'gpt-4o-mini', 'temperature': 0.0, 'api_key': 'sk-iQgw71x5JsUTG93Ya4LlGBL7HLY3GJuTX8negxcmfDi2LLAW', 'device': 'cuda:0', 'gpu_ids': [0], 'model_path': None}
+optim_model_setting : {'model_type': 'openai', 'model_name': 'gpt-4o-mini', 'temperature': 1.0, 'api_key': 'sk-iQgw71x5JsUTG93Ya4LlGBL7HLY3GJuTX8negxcmfDi2LLAW', 'device': 'cuda:0', 'gpu_ids': 0, 'model_path': None}
+search_setting : {'iteration_num': 10, 'expand_width': 3, 'depth_limit': 5, 'min_depth': 2, 'w_exp': 2.5, 'beam_width': 3}
+world_model_setting : {'train_shuffle': True, 'num_new_prompts': 3, 'train_batch_size': 5}
+task : <tasks.object_counting.CustomTask object at 0x000001CE5AC92000>

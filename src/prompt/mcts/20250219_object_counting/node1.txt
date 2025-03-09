@@ -1,0 +1,1 @@
+Questions that involve detailed enumeration of different types of objects, explicitly asking the model to count them, and providing a structured format for the count, while encouraging the explanation of the counting process. Please consider complex scenarios or variations, such as mixed categories or zero counts.
